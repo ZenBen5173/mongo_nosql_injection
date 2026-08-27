@@ -1,14 +1,16 @@
 {
   "name": "mongo_nosql_injection",
   "version": "1.0.0",
-  "description": "",
+  "description": "Demonstration of NoSQL operator injection in MongoDB: a vulnerable Express app, a hardened one, and the payloads that separate them.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "seed": "node seed.js",
+    "insecure": "node insecure_app.js",
+    "secure": "node secure_app.js"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "type": "commonjs",
   "dependencies": {
     "body-parser": "^2.2.2",
